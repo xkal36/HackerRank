@@ -25,11 +25,11 @@ Sample Output:
 
 import sys
 
+# Two different approaches:
+
 def diag_diff1(m):
     return abs(sum([m[i][i] for i in range(len(m))]) 
     	- sum([m[::-1][i][i] for i in range(len(m))]))
-
-# Two different approaches:
 
 def diag_diff2(m):
     first_diag_list = [m[i][i] for i in range(len(m))]
